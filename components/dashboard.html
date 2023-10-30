@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="dashBoard.css" />
+</head>
+
+<body>
+  <section class="container">
+    <a href="../index.html">
+      <img src="../Images/New Logo.png" width="100px" height="60px" alt="Romi.FinanceLogo" /></a>
+    <nav class="navBar">
+      <center>
+        <ul>
+          <a href="../index.html" class="Link"><small>Home</small></a>
+          <a href="dashboard.html" class="Link"><small>Dashboard</small></a>
+          <a href="#" class="Link"><small>NFT</small></a>
+          <a href="../components/earn.html" class="Link"><small>Earn</small></a>
+          <a href="#" class="Link"><small>Buy</small></a>
+          <a href="#" class="Link"><small>Referrals</small></a>
+          <a href="#" class="Link"><small>Ecosystem</small></a>
+          <a href="#" class="Link"><small>About</small></a>
+          <a href="stylesheet.css" class="Button"><button id="btn">Trade</button></a>
+          <div class="secBton">
+            <a href="" class="secondBtn">
+              <img src="../Images/wallet.svg" width="20px" height="20px" />Connect Wallet
+            </a>
+          </div>
+          <span id="headRight">
+            <a href=""><button style="
+                    background-color: black;
+                    border-color: black;
+                    text-decoration: none;
+                    width: 70px;
+                    margin-left: 20px;
+                    height: 35px;
+                  ">
+                <img src="../Images/image.png" /><img src="../Images/setting.jpg" width="30px"
+                  height="30px" /></button></a>
+          </span>
+        </ul>
+      </center>
+    </nav>
+  </section>
+  <hr style="overflow: hidden; width: 100%;" />
+  <section class="container">
+    <p id="stats" style="min-width: 20rem;">Stats <img src="../Images/stats.svg" width="30px" height="30px"><br />
+      <area>
+      <font style="font-size: 0.98rem;color:#ede6d6 ;">Ethereum Total Stats starts from 06 Jan 2022.</font><br />
+      <font style="font-size: 0.98rem;color: #ede6d6">For detailed stats:</span> </font> </area>
+    </p>
+  </section>
+  <section class="container">
+    <p>
+    <table class="table" style="font-family: sans-serif;">
+      <tr>
+        <th>
+          Overview
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p>AUM</p>
+        </td>
+        <td style="padding-left: 28rem; ">
+          <u>$34</u>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>$ZLP Volume</p>
+        </td>
+        <td style="padding-left: 28rem;"><u> $34</u></td>
+      </tr>
+      <tr>
+        <td>
+          <p>24h Volume</p>
+        </td>
+        <td style="padding-left: 28rem;"><u>$0</u></td>
+      </tr>
+      <tr>
+        <td>
+          <p>Long Positions</p>
+        </td>
+        <td style="padding-left: 28rem;"><u>$0</u></td>
+      </tr>
+      <tr>
+        <td>
+          <p>Short Positions</p>
+        </td>
+        <td style="padding-left: 28rem;"><u>$0</u></td>
+      </tr>
+    </table>
+    <table class="table" style="border-collapse: collapse;padding-left: 1rem; ">
+      <tr>
+        <th style="font-family: sans-serif; table-layout: fixed; white-space: nowrap;">
+          Total Stats
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p>Total Fees</p>
+        </td>
+        <td style="padding-left: 28rem;"> <u>$0</u></td>
+      </tr>
+      <tr>
+        <td>
+          <p>Total Volume</p>
+        </td>
+        <td style="padding-left: 28rem;"><u> $0 </u></td>
+      </tr>
+      <tr>
+        <td>
+          <p>Floor Price Fund</p>
+        </td>
+        <td style="padding-left: 26rem;"> $626,888 </td>
+      </tr>
+    </table>
+    </p>
+  </section>
+  <section class="container">
+    <p id="stats" style="min-width: 20rem;">Tokens <img src="../Images/stats.svg" width="30px" height="30px"><br />
+      <area>
+      <font style="font-size: 0.98rem;color:#ede6d6 ;padding-top: 2px;">Platform and $ZLP index tokens.</font>
+    </p>
+  </section>
+  <section class="container">
+    <p>
+    <table class="table" style="table-layout: fixed;">
+      <tr>
+        <th>
+          <img src="../Images/pixelTriang.png" width="30px" height="30px"> $ROMI <button
+            style="background-color: black; color: white; border-width: thin; border-color: black;cursor: pointer;">
+            <img src="../Images/dropDown.jpg" width="20px" height="10px"></button>
+        </th>
+      </tr>
+      <tr>
+        <td style="padding-top:1rem;">Price</td>
+        <td style="padding-left: 4rem; padding-top: 2rem;"><u>$0.00</u></td>
+        <td>
+          <canvas id="chartId" aria-label="chart" width="600px" height="80px"></canvas>
+          <script src="donut.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js"></script>
+          <script id="chartId">
+            var chrt = document.getElementById("chartId").getContext("2d");
+            var chartId = new Chart(chrt, {
+              type: 'doughnut',
+              data: {
+                datasets: [{
+                  label: "liquidity",
+                  data: [94, 6],
+                  backgroundColor: ['darkblue', 'skyblue'],
+                  hoverOffset: 5
+                }],
+
+              },
+              options: {
+                // setting the donut radius
+                borderWidth: 20,
+                responsive: false,
+              }
+            }
+              },
+
+            });
+          </script>
+        </td>
+      </tr>
+      <tr>
+        <td>Supply</td>
+        <td style="padding-left: 4rem;"><u> 10,000 $ROMI</u></td>
+      </tr>
+      <tr>
+        <td style="padding-top: 1rem;">Total Staked</td>
+        <td style="padding-left: 4rem;"><u> $0</u></td>
+      </tr>
+
+      <tr>
+        <td style="padding-top: 1rem;">Market Cap</td>
+        <td style="padding-left: 4rem;"><u> $10</u></td>
+      </tr>
+
+    </table>
+    <table class="table">
+      <tr>
+        <td><img src="../Images/zlp.png" width="40px" height="40px"><img src="../Images/Zlp.svg" width="20px"
+            height="20px" style="margin-left: -1rem;"> <button
+            style="margin-top: -1rem;background-color: black; border-width: thin; cursor: pointer;"><img
+              src="../Images/dropDown.jpg" width="20px" height="10px"></button></td>
+      </tr>
+      <tr>
+        <td style="padding-top: 2rem;">Price</td>
+        <td style="padding-left: 4rem;">$1.150</td>
+      </tr>
+      <tr>
+        <td style="padding-top: 1rem;">Supply</td>
+        <td style="padding-left: 4rem;">29 $ZLP</td>
+      </tr>
+      <tr>
+        <td style="padding-top: 1rem;">Total Staked</td>
+        <td style="padding-left: 4rem;">$34</td>
+      </tr>
+      <tr>
+        <td style="padding-top: 1rem;">Market Cap</td>
+        <td style="padding-left: 4rem;">$34</td>
+      </tr>
+      <tr>
+        <td style="padding-top: 1rem; margin-bottom: 1rem;">Stablecoin Percentage</td>
+        <td style="padding-left: 4rem;">$49.50%</td>
+      </tr>
+    </table>
+    </p>
+  </section>
+  <section class="container">
+    <table class="table1">
+      <thead>
+        <tr>
+          <th>
+            <span style=" padding-left: 1rem;">$ZLP Index Compostion <img style="padding-top: 1rem;"
+                src="../Images/stats.svg" width="30px" height="30px"></span>
+          </th>
+        </tr>
+        <tr>
+          <td style="font-size: 1.2rem; padding-top: 1rem; padding-bottom: 1rem; padding-left: 1rem;">Token</td>
+          <td style="font-size: 1.2rem; padding-top: 1rem; padding-bottom: 1rem;">Price</td>
+          <td style="font-size: 1.2rem; padding-top: 1rem; padding-bottom: 1rem;">Pool</td>
+          <td style="font-size: 1.2rem; padding-top: 1rem; padding-bottom: 1rem;">Weight</td>
+          <td style="font-size: 1.2rem; padding-top: 1rem; padding-bottom: 1rem;">UTILIZATION</td>
+        </tr>
+      </thead>
+      <tr>
+        <td style="font-size: 1.2rem; padding-left: 1rem;"><img src="../Images/etherum.svg" width="30px" height="30px">
+          Ethereum<button><img src="../Images/dropDown.jpg" width="13px" height="10px"></button><br><small
+            style="font-size: 0.8rem; margin-right: -3rem; padding-left: 2.3rem;">ETH</small></td>
+        <td>$1,815.52</td>
+        <td><u>$19</u></td>
+        <td><u>50.49% / 25.00%</u></td>
+        <td>0.00%</td>
+      </tr>
+      <tr>
+        <td style="font-size: 1.2rem; padding-left: 1rem;"><img src="../Images/wrapped.svg" width="30px" height="30px">
+          Ethereum<button><img src="../Images/dropDown.jpg" width="13px" height="10px"></button><br><small
+            style="font-size: 0.8rem; margin-right: -3rem; padding-left: 2.3rem;">WBTC</small></td>
+        <td>$34,637.48</td>
+        <td><u>$0</u></td>
+        <td><u>0.00% / 25.00%</u></td>
+        <td>0.00%</td>
+      </tr>
+      <tr>
+        <td style="font-size: 1.2rem; padding-left: 1rem;"><img src="../Images/apeCoin.svg" width="30px" height="30px">
+          Ethereum<button><img src="../Images/dropDown.jpg" width="13px" height="10px"></button><br><small
+            style="font-size: 0.8rem; margin-right: -3rem; padding-left: 2.3rem;">APE</small></td>
+        <td>$1.37</td>
+        <td><u>$0</u></td>
+        <td><u>0.00% / 25.00%</u></td>
+        <td>0.00%</td>
+      </tr>
+      <tr>
+        <td style="font-size: 1.2rem; padding-left: 1rem; padding-bottom: 1rem;"><img src="../Images/usdCoin.svg"
+            width="30px" height="30px"> Ethereum<button><img src="../Images/dropDown.jpg" width="13px"
+              height="10px"></button><br><small
+            style="font-size: 0.8rem; margin-right: -3rem; padding-left: 2.3rem;">USDC</small></td>
+        <td>$1.00</td>
+        <td><u>$14</u></td>
+        <td><u>49.50% / 25.00%</u></td>
+        <td>0.00%</td>
+      </tr>
+    </table>
+  </section>
+  <br />
+  <div style="background-color: #0A0A0A; margin-top: 2rem ;">
+    <footer>
+      <div style="position:unset;">
+        <center>
+          <p>
+            <img style="margin-top: 30px" src="../Images/New Logo.png" width="100px" height="100px" />
+          </p>
+        </center>
+        <center>
+          <a href="https://twitter.com/zomi.finance" class="footer"><img class="footer" src="../Images/twitter.svg"
+              width="30px" height="40px" /></a>
+          <a href="https://zomifinance.medium.com/" class="footer"><img class="footer" src="../Images/mail.svg"
+              width="30px" height="40px" /></a>
+          <a href="https://github.com/zomi" class="footer"><img class="footer" src="../Images/GitImage.svg" width="30px"
+              height="40px" /></a>
+          <a href="https://t.me/zomichat" class="footer"><img class="footer" src="../Images/telegram.svg" width="30px"
+              height="40px" /></a>
+          <a href="https://discord.com/invite/senshilabs" class="footer"><img class="footer" src="../Images/discord.svg"
+              width="30px" height="40px" /></a>
+        </center>
+        <div>
+          <center style="margin-right: 55px; margin-block: 10px;">
+            <a class="Footer" href="#">Terms and Conditions</a>
+            <a class="Footer" href="#">Referral Terms</a>
+            <a class="Footer" href="#">Media Kit</a>
+          </center>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,632 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="earn.css" />
+</head>
+
+<body>
+  <section class="container">
+    <a href="../index.html">
+      <img src="../Images/New Logo.png" width="100px" height="60px" alt="Romi.FinanceLogo" /></a>
+    <nav class="navBar">
+      <center>
+        <ul>
+          <a href="../index.html" class="Link"><small>Home</small></a>
+          <a href="dashboard.html" class="Link"><small>Dashboard</small></a>
+          <a href="#" class="Link"><small>NFT</small></a>
+          <a href="#" class="Link"><small>Earn</small></a>
+          <a href="#" class="Link"><small>Buy</small></a>
+          <a href="#" class="Link"><small>Referrals</small></a>
+          <a href="#" class="Link"><small>Ecosystem</small></a>
+          <a href="#" class="Link"><small>About</small></a>
+          <a href="stylesheet.css" class="Button"><button id="btn">Trade</button></a>
+          <div class="secBton">
+            <a href="" class="secondBtn">
+              <img src="../Images/wallet.svg" width="20px" height="20px" />Connect Wallet
+            </a>
+          </div>
+          <span id="headRight">
+            <a href=""><button style="
+                    background-color: black;
+                    border-color: black;
+                    text-decoration: none;
+                    width: 70px;
+                    margin-left: 20px;
+                    height: 35px;
+                  ">
+                <img src="../Images/image.png" /><img src="../Images/setting.jpg" width="30px"
+                  height="30px" /></button></a>
+          </span>
+        </ul>
+      </center>
+    </nav>
+  </section>
+  <hr style="overflow: hidden;"/>
+  <section class="container">
+    <p id="stats" style="min-width: 20rem;">Earn<br />
+      <area>
+      <font style="font-size: 1.5rem;color:#ede6d6 ;">Stake $ROMI and $ZLP to earn rewards.</font><br />
+      </area>
+    </p>
+  </section>
+  <section class="container">
+    <p>
+    <table class="table" style="font-family: sans-serif;">
+      <tr>
+        <th>
+          <p style="font-size: 2rem; float: left;">$ROMI</p>
+        </th>
+      </tr>
+      <tr style="border-bottom: 1px solid whitesmoke;"></tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Price</p>
+        </td>
+        <td style="padding-left: 31rem;font-size: 1.6rem; ">
+          <u>$0.00</u>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Wallet</p>
+        </td>
+        <td style="padding-left: 25rem;font-size: 1.6rem;"> ...$ROMI ($...)</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Staked</p>
+        </td>
+        <td style="padding-left: 25rem;font-size: 1.6rem;"> ...$ROMI ($...)</td>
+      </tr>
+      <tr style="border-bottom: 1px solid white; border-width: 0.1px; overflow: hidden; width: 100px;"></tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">APR</p>
+        </td>
+        <td style="padding-left: 30rem;font-size: 1.6rem;"><u>%</u></td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Rewards</p>
+        </td>
+        <td style="padding-left: 30rem;font-size: 1.6rem;"><u>$...</u></td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem; white-space: nowrap;">Multiplier Points APR</p>
+        </td>
+        <td style="padding-left: 29rem;font-size: 1.6rem;"><u>100.00%</u></td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Boost Percentage</p>
+        </td>
+        <td style="padding-left: 30rem;font-size: 1.6rem;"><u>...%</u></td>
+      </tr>
+      <tr style="border-bottom: 1px solid whitesmoke;"></tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Total Staked</p>
+        </td>
+        <td style="padding-left: 25rem;font-size: 1.6rem;">0 $ROMI ($...)</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Total Supply</p>
+        </td>
+        <td style="padding-left: 20rem;font-size: 1.6rem;">10,000 $ROMI ($10)</td>
+      </tr>
+      <tr style="border-bottom: 1px solid whitesmoke;"></tr>
+      <tr>
+        <td>
+          <button id="buy"> Buy $ROMI </button>
+        </td>
+      </tr>
+    </table>
+    <table class="table" style="font-family: sans-serif;">
+      <tr>
+        <th>
+          <p style="font-size: 2rem; float: left;">Total Rewards</p>
+        </th>
+      </tr>
+      <tr style="border-bottom: 1px solid whitesmoke;width: 50%; "></tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">ETH(WETH)</p>
+        </td>
+        <td style="padding-left: 26rem;font-size: 1.6rem; ">
+          ...($...)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">$ROMI</p>
+        </td>
+        <td style="padding-left: 26rem;font-size: 1.6rem;">... ($...)</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Escrowed $ROMI</p>
+        </td>
+        <td style="padding-left: 26rem;font-size: 1.6rem;"> ... ($...)</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Multiplier Points</p>
+        </td>
+        <td style="padding-left: 30rem;font-size: 1.6rem;">...</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Staked Multiplier Points</p>
+        </td>
+        <td style="padding-left: 30rem;font-size: 1.6rem;">...</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem; white-space: nowrap;">Total</p>
+        </td>
+        <td style="padding-left: 29rem;font-size: 1.6rem;">$...</td>
+      </tr>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;"></p>
+        </td>
+        <td style="padding-left: 25rem;font-size: 1.6rem;"></td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;"></p>
+        </td>
+        <td style="padding-left: 20rem;font-size: 1.6rem;"></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr style="border-bottom: 1px solid whitesmoke; border-spacing: 100px;"></tr>
+      <tr>
+        <td style="padding-bottom: 30rem;">
+          <button id="buy"> Connect Wallet </button>
+        </td>
+      </tr>
+    </table>
+    </p>
+  </section>
+  <section class="container">
+    <p>
+    <table class="table" style="font-family: sans-serif; height: 100%;">
+      <tr>
+        <th>
+          <p style="font-size: 2rem; float: left;">$ZLP(Ethereum)</p>
+        </th>
+      </tr>
+      <tr style="border-bottom: 1px solid whitesmoke;"></tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Price</p>
+        </td>
+        <td style="padding-left: 31rem;font-size: 1.6rem; ">
+          $...
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Wallet</p>
+        </td>
+        <td style="padding-left: 25rem;font-size: 1.6rem;"> ...$ROMI ($...)</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Staked</p>
+        </td>
+        <td style="padding-left: 25rem;font-size: 1.6rem;"> ...$ROMI ($...)</td>
+      </tr>
+      <tr style="border-bottom: 1px solid white; border-width: 0.1px;"></tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">APR</p>
+        </td>
+        <td style="padding-left: 30rem;font-size: 1.6rem;"><u>%</u></td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Rewards</p>
+        </td>
+        <td style="padding-left: 30rem;font-size: 1.6rem;"><u>$...</u></td>
+      </tr>
+      <tr style="border-bottom: 1px solid whitesmoke;"></tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Total Staked</p>
+        </td>
+        <td style="padding-left: 25rem;font-size: 1.6rem;">0 $ROMI ($...)</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Total Supply</p>
+        </td>
+        <td style="padding-left: 20rem;font-size: 1.6rem;">10,000 $ROMI ($10)</td>
+      </tr>
+      <tr style="border-bottom: 1px solid whitesmoke;"></tr>
+      <tr>
+        <td>
+          <button id="buy"> Buy $ZLP </button>&nbsp;<button id="buy"> Sell $ZLP</button>
+        </td>
+      </tr>
+    </table>
+    <table class="table" style="font-family: sans-serif; height: 100%;">
+      <tr>
+        <th>
+          <p style="font-size: 2rem; float: left;">Escrowed $ROMI</p>
+        </th>
+      </tr>
+      <tr style="border-bottom: 1px solid whitesmoke;"></tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Price</p>
+        </td>
+        <td style="padding-left: 31rem;font-size: 1.6rem; ">
+          $0.00
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Wallet</p>
+        </td>
+        <td style="padding-left: 25rem;font-size: 1.6rem;"> ...es$ROMI ($...)</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Staked</p>
+        </td>
+        <td style="padding-left: 25rem;font-size: 1.6rem;"> ...es$ROMI ($...)</td>
+      </tr>
+      <tr style="border-bottom: 1px solid white; border-width: 0.1px;"></tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">APR</p>
+        </td>
+        <td style="padding-left: 30rem;font-size: 1.6rem;"><u>...%</u></td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Multiplier Points APR</p>
+        </td>
+        <td style="padding-left: 30rem;font-size: 1.6rem;"><u>100.00%</u></td>
+      </tr>
+      <tr style="border-bottom: 1px solid whitesmoke;overflow: hidden; width: 100%;"></tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Total Staked</p>
+        </td>
+        <td style="padding-left: 25rem;font-size: 1.6rem;">...es$ROMI ($...)</td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Total Supply</p>
+        </td>
+        <td style="padding-left: 20rem;font-size: 1.6rem;">1,023,379 esROMI ($1,071)</td>
+      </tr>
+      <tr style="border-bottom: 1px solid whitesmoke;"></tr>
+      <tr>
+        <td>
+          <button id="buy"> Connect Wallet </button>
+        </td>
+      </tr>
+    </table>
+    </p>
+  </section>
+  <section class="container">
+    <p id="stats" style="min-width: 20rem;">Vest<br />
+      <area>
+      <font style="font-size: 1.5rem;color:#ede6d6 ;">Convert esROMI tokens to $ROMI tokens.</font><br /><font style="font-size: 1.5rem;color:#ede6d6 ;">Please read the <u>vesting details</u>before using the vaults.</font>
+      </area>
+    </p>
+  </section>
+  <section class="container">
+    <p>
+    <table class="table" style="font-family: sans-serif; height: 100%;">
+      <tr>
+        <th>
+          <p style="font-size: 2rem; float: left;">$ROMI Vault</p>
+        </th>
+      </tr>
+      <tr style="border-bottom: 1px solid whitesmoke;"></tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Staked Tokens</p>
+        </td>
+        <td style="padding-left: 31rem;font-size: 1.6rem; ">
+          <u>...</u>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Reserverd for Vesting</p>
+        </td>
+        <td style="padding-left: 29rem;font-size: 1.6rem;"> 0.00 / ... </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Vesting Status</p>
+        </td>
+        <td style="padding-left: 23.5rem;font-size: 1.6rem;"> <u>0.0000 / 0.0000</u></td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Claimable</p>
+        </td>
+        <td style="padding-left: 25rem;font-size: 1.6rem;"><u>0.0000 $ROMI</u></td>
+      </tr>
+      <tr style="border-bottom: 1px solid whitesmoke;"></tr>
+      <tr>
+        <td>
+          <button id="buy"> Connect Wallet </button>
+        </td>
+      </tr>
+    </table>
+    <table class="table" style="font-family: sans-serif; height: 100%;">
+      <tr>
+        <th>
+          <p style="font-size: 2rem; float: left;">$ZLP Vault</p>
+        </th>
+      </tr>
+      <tr style="border-bottom: 1px solid whitesmoke;"></tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Staked Tokens</p>
+        </td>
+        <td style="padding-left: 30rem;font-size: 1.6rem; ">
+          ... $ZLP
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Reserverd for Vesting</p>
+        </td>
+        <td style="padding-left: 29.5rem;font-size: 1.6rem;"> 0.00 / ... </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Vesting Status</p>
+        </td>
+        <td style="padding-left: 23.5rem;font-size: 1.6rem;"> <u>0.0000 / 0.0000</u></td>
+      </tr>
+      <tr>
+        <td>
+          <p style="font-size: 1.6rem;">Claimable</p>
+        </td>
+        <td style="padding-left: 25rem;font-size: 1.6rem;"><u>0.0000 $ROMI</u></td>
+      </tr>
+      <tr style="border-bottom: 1px solid whitesmoke;"></tr>
+      <tr>
+        <td>
+          <button id="buy"> Connect Wallet </button>
+        </td>
+      </tr>
+    </table>
+    </p>
+      </section>
+      <hr/>
+  <div style="background-color: #0A0A0A;">
+    <footer>
+      <div style="position:unset;">
+        <center>
+          <p>
+            <img style="margin-top: 30px" src="../Images/New Logo.png" width="100px" height="100px" />
+          </p>
+        </center>
+        <center>
+          <a href="https://twitter.com/zomi.finance" class="footer"><img class="footer" src="../Images/twitter.svg"
+              width="30px" height="40px" /></a>
+          <a href="https://zomifinance.medium.com/" class="footer"><img class="footer" src="../Images/mail.svg"
+              width="30px" height="40px" /></a>
+          <a href="https://github.com/zomi" class="footer"><img class="footer" src="../Images/GitImage.svg" width="30px"
+              height="40px" /></a>
+          <a href="https://t.me/zomichat" class="footer"><img class="footer" src="../Images/telegram.svg" width="30px"
+              height="40px" /></a>
+          <a href="https://discord.com/invite/senshilabs" class="footer"><img class="footer" src="../Images/discord.svg"
+              width="30px" height="40px" /></a>
+        </center>
+        <div>
+          <center style="margin-right: 55px; margin-block: 10px;">
+            <a class="Footer" href="#">Terms and Conditions</a>
+            <a class="Footer" href="#">Referral Terms</a>
+            <a class="Footer" href="#">Media Kit</a>
+          </center>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
